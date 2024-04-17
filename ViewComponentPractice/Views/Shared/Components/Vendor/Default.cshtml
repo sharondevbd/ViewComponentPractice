@@ -1,0 +1,10 @@
+﻿@*ViewComponentPractice.Models.Vendor*@
+@model IEnumerable<string>
+<div class="list-group">
+	@foreach(var item in Model)
+	{
+		<div class="list-group-item">
+			<a asp-action="VendorsInvoice" asp-controller="VendorVM" asp-route-name="@item">@item</a>
+			</div>
+	}
+</div>
